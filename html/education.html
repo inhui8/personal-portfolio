@@ -5,20 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>education</title>
+    <h1><a href="./Home.html">Yinghui's Website</a></h1>
+    <button>Sign in</button>
+    <header>
+        <nav>
+            <li><a href="./About.html">AboutMe</a></li>
+            <li><a href="./project.html">Project</a></li>
+            <li><a href="./education.html">education</a></li>
+            <li><a href="./contact.html">ContactMe</a></li>
+            <li><a href="./experiment.html">experiment</a></li>
+        </nav>
+    </header>
 </head>
 <body>
-    
+    <h2>Schools</h2>
+    <ul>
+        <li>University of California, San Diego</li>
+        <li>East Los Angeles College</li>
+    </ul>
+    <picture>
+        <source media="(min-width:650px)" srcset="/source/UCSD1.jpg" width="500" height="600">
+        <source media="(min-width:465px)" srcset="/source/UCSD3.jpg" width="300" height="400">
+        <img src="/source/UCSD1.jpg" alt="UCSD" style="width:auto;">
+    </picture>
+    <br>
+    <aside>
+        <h3>UCSD is a great school</h3>
+        <p>The University of California, San Diego is a public land-grant research university in San Diego</p>
+    </aside>
+    <table>
+        <caption><h2>Education</h2></caption>
+        <colgroup>
+            <col span="2" style="background-color:rgba(0, 229, 255, 0.212)">
+            <col style="background-color:rgba(179, 0, 255, 0.282)">
+          </colgroup>
+        <tr>
+          <th>School</th>
+          <th>Location</th>
+          <th>time</th>
+        </tr>
+        <tr>
+          <td>University of California, San Diego</td>
+          <td>9500 Gilman Dr, La Jolla, CA 92093</td>
+          <td>Sep.2020 - Now</td>
+        </tr>
+        <tr>
+          <td>East Los Angeles College</td>
+          <td>1301 Avenida Cesar Chavez, Monterey Park, CA 91754</td>
+          <td>Sep.2018-May.2020</td>
+        </tr>
+      </table>
+    <h3>You can use map below to map to UCSD</h3>
+    <iframe src="http://act.ucsd.edu/maps/?_ga=2.11786423.225872238.1674934799-944391164.1634447925" 
+    title="UCSD map" width="500" height="400">
+    </iframe>
 </body>
 <footer>
-    <form>
-        <label for="fname">First name:</label>
-        <input type="text" id="fname" name="fname"><br><br>
-        <label for="lname">Last name:</label>
-        <input type="text" id="lname" name="lname"><br><br>
-        <label for="Suggestions">Write down Suggestions:</label><br><br>
-        <textarea id="Suggestions" name="Suggestions" rows="4" cols="50">
-        </textarea><br><br>
-        <input type="submit" value="Submit">
-      </form>
+    <hr>
+    <h3>This website made by Yinghui Sun</h3>
 </footer>
 </html>

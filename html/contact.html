@@ -5,20 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contact</title>
+    <h1><a href="./Home.html">Yinghui's Website</a></h1>
+    <button>Sign in</button>
+    <header>
+        <nav>
+            <li><a href="./About.html">AboutMe</a></li>
+            <li><a href="./project.html">Project</a></li>
+            <li><a href="./education.html">education</a></li>
+            <li><a href="./contact.html">ContactMe</a></li>
+            <li><a href="./experiment.html">experiment</a></li>
+        </nav>
+    </header>
+    <canvas id="myCanvas" width="200" height="150">
+        Your browser does not support the HTML5 canvas tag.</canvas>
 </head>
 <body>
+    <form>
+        <fieldset>
+            <legend>Want to give advise or hire me?:</legend>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <label for="Company">Company website:</label>
+            <input type="text" id="Company" name="Company"><br><br>
+            <label for="Suggestions">Write down Suggestions:</label><br><br>
+            <textarea id="Suggestions" name="Suggestions" rows="4" cols="50">
+            </textarea><br><br>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
     
+        
+        
 </body>
 <footer>
-    <form>
-        <label for="fname">First name:</label>
-        <input type="text" id="fname" name="fname"><br><br>
-        <label for="lname">Last name:</label>
-        <input type="text" id="lname" name="lname"><br><br>
-        <label for="Suggestions">Write down Suggestions:</label><br><br>
-        <textarea id="Suggestions" name="Suggestions" rows="4" cols="50">
-        </textarea><br><br>
-        <input type="submit" value="Submit">
-      </form>
+    <hr>
+    <h3>This website made by Yinghui Sun</h3>
 </footer>
+<script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    
+    ctx.font = "30px Verdana";
+    // Create gradient
+    var gradient = ctx.createLinearGradient(0, 0, c.width, 0);
+    gradient.addColorStop("0", "magenta");
+    gradient.addColorStop("0.5", "blue");
+    gradient.addColorStop("1.0", "red");
+    // Fill with gradient
+    ctx.fillStyle = gradient;
+    ctx.fillText("Keep Smile!", 10, 90);
+    </script>
 </html>
