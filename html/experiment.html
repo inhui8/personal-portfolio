@@ -78,18 +78,28 @@
             </svg>
         </span>
     </div>
-    <button onclick="showContent()">Show hidden content</button>
-    <template>
-    <h2>Suprise</h2>
-    <img src="/source/basketball.jpg" width="214" height="150">
-    </template>
+    
+
     <h1><em>Just for experiment</em></h1>
     <video width="1000" controls>
         <source src="/source/Video Of Funny Cat.mp4" type="video/mp4"> 
-    </video>
+    </video><br><br>
+    <button onclick="showContent()">Show hidden content</button>
+    <template>
+        <h2>Suprise</h2>
+        <img src="/source/basketball.jpg" width="214" height="150">
+    </template>
 </body>
 <footer>
     <hr>
     <h3>This website made by Yinghui Sun</h3>
 </footer>
+<!-- since template need to use js to show up, so we need to use js here -->
+<script>
+    function showContent() {
+      var temp = document.getElementsByTagName("template")[0];
+      var clon = temp.content.cloneNode(true);
+      document.body.appendChild(clon);
+    }
+</script>
 </html>
