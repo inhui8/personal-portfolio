@@ -2,13 +2,16 @@
     --body-color: rgb(7, 8, 8);
     background-color: rgba(0, 0, 0, 0.782);
 }
-body{
-    
+body{ 
     color: white;
     margin: 0;
-    margin: 3vw;
+}
+div *{
+    margin-left: 1vw;
+    margin-right: 1vw;
 }
 a{
+    font-size: 1.5rem;
     color: white;
 }
 .background{
@@ -20,15 +23,16 @@ a{
     padding-top: 10px;
 }
 Nav {
-    Display: Flex;
+    /*Display: Flex;
     Align-Items: Center;
     Justify-Content: Space-Between;
-    Padding: 1.5vh 1vw;
-  }
-  /* CSS for NavBar Anchor Tag i.e. Links  */
+    Padding: 1.5vh 1vw;*/
+    float: right;
+}
+
 Nav a {
     color: rgb(255, 255, 255);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 #middle{
     display: grid;
@@ -47,4 +51,44 @@ Nav a {
     grid-template-columns: auto auto;
     text-align: left;
     gap: 1vw;  
+}
+@media screen and (max-width: 875px) {
+    #middle{
+        display: grid;
+        grid-template-columns: auto auto;
+        text-align: left;
+        gap: 1vw;  
+    }
+    #journey #inside{
+        display: grid;
+        grid-template-columns: auto;
+        text-align: left;
+        gap: 1vw;  
+    }
+    #friends span{
+        display: grid;
+        grid-template-columns: auto;
+        text-align: left;
+        gap: 1vw;  
+    }
+}
+@media screen and (max-width: 450px) {
+    #middle{
+        display: grid;
+        grid-template-columns: auto;
+        text-align: left;
+        gap: 1vw;  
+    }
+    #journey #inside{
+        display: grid;
+        grid-template-columns: auto;
+        text-align: left;
+        gap: 1vw;  
+    }
+    #friends span{
+        display: grid;
+        grid-template-columns: auto;
+        text-align: left;
+        gap: 1vw;  
+    }
 }

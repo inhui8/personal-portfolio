@@ -8,6 +8,7 @@ body{
     margin: 0;
 }
 a{
+    font-size: 1.5rem;
     color: white;
 }
 .background{
@@ -21,6 +22,7 @@ a{
 
 div *{
     margin-left: 1vw;
+    margin-right: 1vw;
 }
 main{
     display: grid;
@@ -28,6 +30,7 @@ main{
     margin-right: 1vw;
     padding: 5px;
 }
+
 main div {
     display: grid;
     grid-template-columns: auto auto;
@@ -35,15 +38,16 @@ main div {
 }
 
 Nav {
-    Display: Flex;
+    /*Display: Flex;
     Align-Items: Center;
     Justify-Content: Space-Between;
-    Padding: 1.5vh 1vw;
-  }
-  /* CSS for NavBar Anchor Tag i.e. Links  */
+    Padding: 1.5vh 1vw;*/
+    float: right;
+}
+
 Nav a {
     color: rgb(255, 255, 255);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 #tables{
     margin-left: auto; 
@@ -54,4 +58,18 @@ Nav a {
 }
 .contact{
     margin: 1%;
+}
+@media screen and (max-width: 650px) {
+    body main div {
+        display: grid;
+        grid-template-columns: auto;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 450px) {
+    body main div {
+        display: grid;
+        grid-template-columns: auto;
+        text-align: center;
+    }
 }
