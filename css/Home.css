@@ -27,14 +27,15 @@ div *{
 main{
     display: grid;
     grid-template-rows: auto auto;
-    margin-right: 1vw;
-    padding: 5px;
+    margin-right: 2vw;
+    padding: 1vw;
 }
 
 main div {
     display: grid;
     grid-template-columns: auto auto;
     text-align: center;
+    gap: 1vw;
 }
 
 Nav {
@@ -59,7 +60,7 @@ Nav a {
 .contact{
     margin: 1%;
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 750px) {
     body main div {
         display: grid;
         grid-template-columns: auto;
