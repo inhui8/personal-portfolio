@@ -6,6 +6,7 @@ body{
     
     color: white;
     margin: 0;
+    margin: 3vw;
 }
 a{
     color: white;
@@ -18,22 +19,6 @@ a{
     background-repeat: no-repeat;
     padding-top: 10px;
 }
-
-div *{
-    margin-left: 1vw;
-}
-main{
-    display: grid;
-    grid-template-rows: auto auto;
-    margin-right: 1vw;
-    padding: 5px;
-}
-main div {
-    display: grid;
-    grid-template-columns: auto auto;
-    text-align: center;
-}
-
 Nav {
     Display: Flex;
     Align-Items: Center;
@@ -45,13 +30,21 @@ Nav a {
     color: rgb(255, 255, 255);
     font-size: 1.5rem;
   }
-#tables{
-    margin-left: auto; 
-    margin-right: auto;
+#middle{
+    display: grid;
+    grid-template-columns: 37% 26% 37%;
+    text-align: left;
+    gap: 1vw;  
 }
-#School{
-    text-align: center;
+#journey #inside{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: left;
+    gap: 1vw;  
 }
-.contact{
-    margin: 1%;
+#friends span{
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: left;
+    gap: 1vw;  
 }
