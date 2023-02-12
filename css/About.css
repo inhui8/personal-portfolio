@@ -1,9 +1,10 @@
 :root {
-    --body-color: rgb(7, 8, 8);
+    --back-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.782);
+    --font-color: white;
 }
 body{ 
-    color: white;
+    color: var(--font-color);
     margin: 0;
 }
 div *{
@@ -14,10 +15,37 @@ a{
     font-size: 1.5rem;
     color: white;
 }
+@font-face {
+    font-family: "customFont";
+    src: url('../font/static/Rubik-BlackItalic.ttf') format('truetype');
+    font-display: swap;
+}
+#custom{
+    font-family: customFont, sans-serif;
+    font-display: swap;
+}
+a{
+    transition: color 3s;
+}
+a:hover{
+    color: red !important;
+}
+#rabbit{
+    animation: change 5s linear infinite;   
+}
+
+@keyframes change{
+    0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(20%);
+      }
+}
 .background{
     background-image: url("/source/computer.jpg");
     background-size: cover;
-    background-color: black;
+    background-color: var(--back-color);
     padding-bottom: 40vw;
     background-repeat: no-repeat;
     padding-top: 10px;
