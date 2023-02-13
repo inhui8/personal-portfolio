@@ -78,7 +78,7 @@ Nav a {
     display: grid;
     grid-template-columns: auto auto;
     text-align: left;
-    gap: 1vw;  
+    gap: 2vw;  
 }
 @media screen and (max-width: 875px) {
     #middle{
