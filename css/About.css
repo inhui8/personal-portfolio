@@ -22,7 +22,6 @@ a{
 }
 #custom{
     font-family: customFont, sans-serif;
-    font-display: swap;
 }
 a{
     transition: color 3s;
