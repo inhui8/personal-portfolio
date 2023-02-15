@@ -1,6 +1,6 @@
 :root {
     --back-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.782);
+    background-color: rgba(0, 0, 0, 0.897);
     --font-color: white;
 }
 @font-face {
@@ -64,6 +64,18 @@ main div {
     text-align: center;
     gap: 1vw;
 }
+main div span{
+    border: 3px solid;
+    border-radius: 5%;
+    background-color: rgba(49, 48, 48, 0.738);
+    padding-bottom: 2vh;
+    margin: 3vw;
+}
+main div span img{
+    border-radius: 6%;
+    width: 70%;
+    height: auto;
+}
 
 Nav {
     /*Display: Flex;
@@ -87,7 +99,7 @@ Nav a {
 .contact{
     margin: 1%;
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1079px) {
     body main div {
         display: grid;
         grid-template-columns: auto;

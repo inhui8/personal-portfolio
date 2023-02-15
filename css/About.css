@@ -1,6 +1,6 @@
 :root {
     --back-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.782);
+    background-color: rgba(0, 0, 0, 0.897);
     --font-color: white;
 }
 body{ 
@@ -63,59 +63,99 @@ Nav a {
   }
 #middle{
     display: grid;
-    grid-template-columns: 37% 26% 37%;
-    text-align: left;
-    gap: 1vw;  
-}
-#journey #inside{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    text-align: left;
-    gap: 1vw;  
-}
-#friends span{
-    display: grid;
     grid-template-columns: auto auto;
     text-align: left;
-    gap: 2vw;  
+    gap: 1vw;  
+    border: 3px solid;
+    padding: 2vh;
+    margin: 2vh;
+    border-radius: 5%;
+    background-color: rgba(49, 48, 48, 0.738);
 }
-@media screen and (max-width: 875px) {
+#middle span{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.all{
+    border-radius: 6%;
+    width: 70%;
+    height: auto;
+}
+#journey{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: left;
+    gap: 1vw;  
+    border: 3px solid;
+    padding: 2vh;
+    margin: 2vh;
+    border-radius: 5%;
+    background-color: rgba(49, 48, 48, 0.738);
+}
+#friends{
+    display: grid;
+    grid-template-rows: auto auto;
+    text-align: left;
+    gap: 2vw;  
+    
+}
+#friendscont{
+    border: 3px solid;
+    padding: 2vh;
+    margin: 2vh;
+    border-radius: 5%;
+    background-color: rgba(49, 48, 48, 0.738);
+}
+#friendspic{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: left;
+    gap: 2vw; 
+    border: 3px solid;
+    padding: 2vh;
+    margin: 2vh;
+    border-radius: 5%;
+    background-color: rgba(49, 48, 48, 0.738);
+}
+@media screen and (max-width: 1079px) {
     #middle{
+        display: grid;
+        grid-template-columns: auto;
+        text-align: left;
+        gap: 1vw;  
+    }
+    #journey{
         display: grid;
         grid-template-columns: auto auto;
         text-align: left;
         gap: 1vw;  
     }
-    #journey #inside{
+    #friendspic{
         display: grid;
-        grid-template-columns: auto;
+        grid-template-columns: auto auto auto;
         text-align: left;
-        gap: 1vw;  
-    }
-    #friends span{
-        display: grid;
-        grid-template-columns: auto;
-        text-align: left;
-        gap: 1vw;  
+        gap: 2vw; 
     }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 550px) {
     #middle{
         display: grid;
         grid-template-columns: auto;
         text-align: left;
         gap: 1vw;  
     }
-    #journey #inside{
+    #journey{
         display: grid;
         grid-template-columns: auto;
         text-align: left;
         gap: 1vw;  
     }
-    #friends span{
+    #friendspic{
         display: grid;
-        grid-template-columns: auto;
+        grid-template-columns: auto auto;
         text-align: left;
         gap: 1vw;  
+
     }
 }
